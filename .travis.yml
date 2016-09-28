@@ -8,7 +8,3 @@ matrix:
 before_install:
   - npm install -g bower
   - bower install
-
-script:
-  - grunt ci
-  - 'if [ "${TRAVIS_NODE_VERSION}" = "4.2" ]; then grunt protractor ; fi'
